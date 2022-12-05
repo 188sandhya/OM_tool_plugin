@@ -1,0 +1,46 @@
+{
+  "name": "eb-plugin2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "copy_analytics": "cpx 'src/analytics/analytics.js' dist/analytics -v",
+    "copy_markdown": "cpx 'src/datasource/scripted-datasource/*md' dist/datasource/scripted-datasource -v",
+    "build": "TZ=ISO grafana-toolkit plugin:build && npm run copy_markdown && npm run copy_analytics",
+    "test": "TZ=ISO jest --verbose",
+    "coverage": "TZ=UTC jest --coverage",
+    "dev": "grafana-toolkit plugin:dev && npm run copy_markdown",
+    "watch": "grafana-toolkit plugin:dev --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "3.5.1",
+    "lodash": "4.17.21",
+    "react-select": "^3.1.1",
+    "react-use": "^15.3.4"
+  },
+  "devDependencies": {
+    "@grafana/data": "7.5.4",
+    "@grafana/runtime": "7.5.4",
+    "@grafana/toolkit": "7.5.4",
+    "@grafana/ui": "7.5.4",
+    "@types/enzyme": "^3.10.8",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^26.0.24",
+    "@types/lodash": "latest",
+    "babel-loader": "^8.0.6",
+    "cpx": "^1.5.0",
+    "emotion": "10.0.27",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.2",
+    "fast-deep-equal": "^3.1.1",
+    "fetch-mock": "^9.4.0",
+    "jest": "^26.6.3",
+    "jest-fetch-mock": "^3.0.3",
+    "node-fetch": ">=2.6.1",
+    "react": "17.0.1",
+    "react-calendar": "2.19.2",
+    "tslib": "2.3.0"
+  }
+}
