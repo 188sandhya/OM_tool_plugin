@@ -1,0 +1,31 @@
+table.ebTable {
+  table-layout: fixed;
+}
+
+table.ebTable .ebTableHeader th {
+  white-space: normal;
+  text-align: center;
+  word-break: break-word;
+}
+
+table.ebTable .truncated div,
+table.ebTable .truncated a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+table.ebTable thead th:first-child {
+  text-align: left;
+  width: 25%;
+}
+
+table.ebTable thead th:last-child {
+  width: 5%;
+}
+
+add-slo > form table.ebTable tbody button[type='button'] {
+  color: rgb(216, 217, 218);
+  background: linear-gradient(rgb(38, 38, 40), rgb(48, 48, 50));
+}
