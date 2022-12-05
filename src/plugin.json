@@ -1,0 +1,163 @@
+{
+  "type": "app",
+  "name": "OMA Tool",
+  "priority": 1,
+  "id": "grafana-eb-app",
+  "routes": [],
+  "info": {
+    "description": "OMA Tool",
+    "author": {
+      "name": "METROnom"
+    },
+    "keywords": [
+      ""
+    ],
+    "logos": {
+      "small": "img/oma_plugin.png",
+      "large": "img/oma_plugin.png"
+    },
+    "links": [],
+    "version": "2.4.13"
+  },
+  "includes": [
+    {
+      "type": "page",
+      "name": "Register Feedback and Satisfaction",
+      "role": "Viewer",
+      "path": "a/grafana-eb-app/?page=register_feedback_and_satisfaction",
+      "addToNav": false
+    },
+    {
+      "type": "page",
+      "name": "Add Happiness Metric",
+      "role": "Viewer",
+      "path": "a/grafana-eb-app/?page=add_happiness_metric",
+      "addToNav": false
+    },
+    {
+      "type": "dashboard",
+      "name": "Team Metrics",
+      "uid": "team-metrics",
+      "path": "dashboards/team-metrics.json",
+      "role": "Viewer",
+      "addToNav": true
+    },
+    {
+      "type": "dashboard",
+      "name": "Software Development Analytics",
+      "uid": "software-development-analytics",
+      "path": "dashboards/software-development-analytics.json",
+      "role": "Viewer",
+      "addToNav": true,
+      "defaultNav": true
+    },
+    {
+      "type": "dashboard",
+      "name": "GitHub Workflows",
+      "uid": "github-workflows",
+      "path": "dashboards/github-workflows.json",
+      "role": "Viewer",
+      "addToNav": true
+    },
+    {
+      "type": "dashboard",
+      "name": "Deployments Changeset",
+      "uid": "deployments-changeset",
+      "path": "dashboards/deployments-changeset.json",
+      "role": "Viewer",
+      "addToNav": true
+    },
+    {
+      "type": "dashboard",
+      "name": "Issues Tracker",
+      "uid": "issues-tracker",
+      "path": "dashboards/issues-tracker.json",
+      "role": "Viewer",
+      "addToNav": true
+    },
+    {
+      "type": "dashboard",
+      "name": "Engineering Metrics",
+      "uid": "engineering-metrics",
+      "path": "dashboards/engineering-metrics.json",
+      "role": "Viewer",
+      "addToNav": true
+    },
+    {
+      "type": "page",
+      "name": "Plugin Config",
+      "icon": "cog",
+      "path": "plugins/grafana-eb-app?page=overview",
+      "role": "Admin",
+      "addToNav": true
+    },
+    {
+      "type": "dashboard",
+      "name": "DevOps Metrics Details",
+      "uid": "devops-metrics-details",
+      "path": "dashboards/devops-metrics-details.json",
+      "role": "Viewer",
+      "addToNav": false
+    },
+    {
+      "type": "dashboard",
+      "name": "Operational Metrics",
+      "uid": "operational-metrics",
+      "path": "dashboards/operational-metrics.json",
+      "role": "Viewer",
+      "addToNav": false
+    },
+    {
+      "type": "dashboard",
+      "name": "Development Metrics",
+      "uid": "development-metrics",
+      "path": "dashboards/development-metrics.json",
+      "role": "Viewer",
+      "addToNav": false
+    },
+    {
+      "type": "dashboard",
+      "name": "Deployment Frequency",
+      "uid": "key-deployment-frequency",
+      "path": "dashboards/key-deployment-frequency.json",
+      "role": "Viewer",
+      "addToNav": false
+    },
+    {
+      "type": "dashboard",
+      "name": "Lead Time For Changes",
+      "uid": "key-lead-time-for-changes",
+      "path": "dashboards/key-lead-time-for-changes.json",
+      "role": "Viewer",
+      "addToNav": false
+    },
+    {
+      "type": "dashboard",
+      "name": "Mean Time To Recover",
+      "uid": "key-mean-time-to-recover",
+      "path": "dashboards/key-mean-time-to-recover.json",
+      "role": "Viewer",
+      "addToNav": false
+    },
+    {
+      "type": "dashboard",
+      "name": "Mean Time To Failure",
+      "uid": "key-mean-time-to-failure",
+      "path": "dashboards/key-mean-time-to-failure.json",
+      "role": "Viewer",
+      "addToNav": false
+    },    
+    {
+      "type": "dashboard",
+      "name": "Deployment Details",
+      "uid": "deployment-details",
+      "path": "dashboards/deployment-details.json",
+      "role": "Viewer",
+      "addToNav": false
+    }
+  ],
+  "dependencies": {
+    "grafanaVersion": "7.5.x",
+    "plugins": []
+  }
+}
